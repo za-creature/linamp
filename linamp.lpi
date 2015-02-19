@@ -1,0 +1,147 @@
+<?xml version="1.0"?>
+<CONFIG>
+  <ProjectOptions>
+    <PathDelim Value="\"/>
+    <Version Value="5"/>
+    <General>
+      <MainUnit Value="0"/>
+      <IconPath Value="./"/>
+      <TargetFileExt Value=".exe"/>
+      <ActiveEditorIndexAtStart Value="2"/>
+    </General>
+    <Units Count="9">
+      <Unit0>
+        <CursorPos X="27" Y="15"/>
+        <EditorIndex Value="1"/>
+        <Filename Value="linamp.lpr"/>
+        <IsPartOfProject Value="True"/>
+        <Loaded Value="True"/>
+        <TopLine Value="1"/>
+        <UnitName Value="linamp"/>
+        <UsageCount Value="23"/>
+      </Unit0>
+      <Unit1>
+        <CursorPos X="59" Y="54"/>
+        <EditorIndex Value="0"/>
+        <Filename Value="mainform.pas"/>
+        <ComponentName Value="Main"/>
+        <IsPartOfProject Value="True"/>
+        <Loaded Value="True"/>
+        <ResourceFilename Value="mainform.lrs"/>
+        <TopLine Value="35"/>
+        <UnitName Value="MainForm"/>
+        <UsageCount Value="23"/>
+      </Unit1>
+      <Unit2>
+        <CursorPos X="23" Y="117"/>
+        <Filename Value="E:\Lazarus\lcl\fileutil.pas"/>
+        <TopLine Value="93"/>
+        <UnitName Value="FileUtil"/>
+        <UsageCount Value="10"/>
+      </Unit2>
+      <Unit3>
+        <CursorPos X="10" Y="1964"/>
+        <Filename Value="E:\Lazarus\lcl\lcltype.pp"/>
+        <TopLine Value="1947"/>
+        <UnitName Value="LCLType"/>
+        <UsageCount Value="10"/>
+      </Unit3>
+      <Unit4>
+        <CursorPos X="20" Y="59"/>
+        <Filename Value="E:\FPC2\units\i386-win32\fmodapi374win\fmod.pas"/>
+        <TopLine Value="42"/>
+        <UnitName Value="fmod"/>
+        <UsageCount Value="10"/>
+      </Unit4>
+      <Unit5>
+        <CursorPos X="14" Y="278"/>
+        <EditorIndex Value="2"/>
+        <Filename Value="playlisteditor.pas"/>
+        <ComponentName Value="PlaylistWindow"/>
+        <IsPartOfProject Value="True"/>
+        <Loaded Value="True"/>
+        <ResourceFilename Value="playlisteditor.lrs"/>
+        <TopLine Value="270"/>
+        <UnitName Value="PlaylistEditor"/>
+        <UsageCount Value="23"/>
+      </Unit5>
+      <Unit6>
+        <CursorPos X="1" Y="499"/>
+        <Filename Value="E:\Lazarus\lcl\include\customlistbox.inc"/>
+        <TopLine Value="482"/>
+        <UsageCount Value="10"/>
+      </Unit6>
+      <Unit7>
+        <CursorPos X="61" Y="103"/>
+        <EditorIndex Value="3"/>
+        <Filename Value="keycodes.inc"/>
+        <Loaded Value="True"/>
+        <TopLine Value="87"/>
+        <UsageCount Value="10"/>
+      </Unit7>
+      <Unit8>
+        <CursorPos X="1024" Y="74"/>
+        <Filename Value="E:\sum.pp"/>
+        <TopLine Value="42"/>
+        <UnitName Value="sum"/>
+        <UsageCount Value="10"/>
+      </Unit8>
+    </Units>
+    <PublishOptions>
+      <Version Value="2"/>
+      <IgnoreBinaries Value="False"/>
+      <IncludeFileFilter Value="*.(pas|pp|inc|lfm|lpr|lrs|lpi|lpk|sh|xml)"/>
+      <ExcludeFileFilter Value="*.(bak|ppu|ppw|o|so);*~;backup"/>
+    </PublishOptions>
+    <RunParams>
+      <local>
+        <FormatVersion Value="1"/>
+        <LaunchingApplication PathPlusParams="/usr/X11R6/bin/xterm -T 'Lazarus Run Output' -e $(LazarusDir)/tools/runwait.sh $(TargetCmdLine)"/>
+      </local>
+    </RunParams>
+    <RequiredPackages Count="2">
+      <Item1>
+        <PackageName Value="LCL"/>
+      </Item1>
+      <Item2>
+        <PackageName Value="FCL"/>
+        <MinVersion Major="1" Valid="True"/>
+      </Item2>
+    </RequiredPackages>
+    <JumpHistory Count="0" HistoryIndex="-1"/>
+  </ProjectOptions>
+  <CompilerOptions>
+    <Version Value="5"/>
+    <PathDelim Value="\"/>
+    <Target>
+      <Filename Value="linamp"/>
+    </Target>
+    <SearchPaths>
+      <OtherUnitFiles Value="$(LazarusDir)\lcl\units\$(TargetCPU)-$(TargetOS)\;E:\FPC2\units\i386-win32\fmodapi374win\;$(LazarusDir)\lcl\units\$(TargetCPU)-$(TargetOS)\$(LCLWidgetType)\;$(LazarusDir)\components\codetools\units\$(TargetCPU)-$(TargetOS)\;$(LazarusDir)\components\custom\;$(LazarusDir)\packager\units\$(TargetCPU)-$(TargetOS)\"/>
+      <SrcPath Value="$(LazarusDir)\lcl\;$(LazarusDir)\lcl\interfaces\$(LCLWidgetType)\"/>
+    </SearchPaths>
+    <CodeGeneration>
+      <Generate Value="Faster"/>
+    </CodeGeneration>
+    <Linking>
+      <Options>
+        <Win32>
+          <GraphicApplication Value="True"/>
+        </Win32>
+      </Options>
+    </Linking>
+    <Other>
+      <CompilerPath Value="$(CompPath)"/>
+    </Other>
+  </CompilerOptions>
+  <Debugging>
+    <Exceptions Count="2">
+      <Item1>
+        <Name Value="ECodetoolError"/>
+      </Item1>
+      <Item2>
+        <Name Value="EFOpenError"/>
+      </Item2>
+    </Exceptions>
+  </Debugging>
+</CONFIG>

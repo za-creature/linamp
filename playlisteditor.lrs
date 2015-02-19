@@ -1,0 +1,46 @@
+{ This is an automatically generated lazarus resource file }
+
+LazarusResources.Add('TPlaylistWindow','FORMDATA',[
+  'TPF0'#15'TPlaylistWindow'#14'PlaylistWindow'#7'Caption'#6#15'Playlist Editor'
+  +#12'ClientHeight'#3','#1#11'ClientWidth'#3'@'#1#21'Constraints.MinHeight'#3
+  +#160#0#20'Constraints.MinWidth'#3'@'#1#10'OnActivate'#7#12'FormActivate'#7'O'
+  +'nClose'#7#9'FormClose'#12'OnCloseQuery'#7#14'FormCloseQuery'#8'OnCreate'#7
+  +#10'FormCreate'#8'OnResize'#7#10'FormResize'#13'PixelsPerInch'#2'`'#8'Positi'
+  +'on'#7#14'poScreenCenter'#18'HorzScrollBar.Page'#3'?'#1#18'VertScrollBar.Pag'
+  +'e'#3'+'#1#4'Left'#3#159#1#6'Height'#3','#1#3'Top'#3#218#0#5'Width'#3'@'#1#0
+  +#9'TGroupBox'#8'GroupBox'#22'BorderSpacing.OnChange'#13#7'Caption'#6#15'Sear'
+  +'ch for text'#12'ClientHeight'#2#30#11'ClientWidth'#3'4'#1#11'ParentColor'#9
+  +#8'TabOrder'#2#0#4'Left'#2#4#6'Height'#2'0'#5'Width'#3'8'#1#0#5'TEdit'#7'Edi'
+  +'tBox'#22'BorderSpacing.OnChange'#13#8'OnChange'#7#13'EditBoxChange'#9'OnKey'
+  +'Down'#7#14'EditBoxKeyDown'#8'TabOrder'#2#0#4'Left'#2#4#6'Height'#2#23#3'Top'
+  +#2#2#5'Width'#3','#1#0#0#0#7'TButton'#13'AddFileButton'#22'BorderSpacing.OnC'
+  +'hange'#13#25'BorderSpacing.InnerBorder'#2#2#7'Caption'#6#8'Add file'#7'OnCl'
+  +'ick'#7#18'AddFileButtonClick'#8'TabOrder'#2#1#4'Left'#2#4#6'Height'#2#25#3
+  +'Top'#3#16#1#5'Width'#2'K'#0#0#7'TButton'#18'AddDirectoryButton'#22'BorderSp'
+  +'acing.OnChange'#13#25'BorderSpacing.InnerBorder'#2#2#7'Caption'#6#13'Add Di'
+  +'rectory'#7'OnClick'#7#23'AddDirectoryButtonClick'#8'TabOrder'#2#2#4'Left'#2
+  +'S'#6'Height'#2#25#3'Top'#3#16#1#5'Width'#2'K'#0#0#7'TButton'#19'ClearPlayLi'
+  +'stButton'#22'BorderSpacing.OnChange'#13#25'BorderSpacing.InnerBorder'#2#2#7
+  +'Caption'#6#14'Clear Playlist'#7'OnClick'#7#24'ClearPlayListButtonClick'#8'T'
+  +'abOrder'#2#3#4'Left'#3#162#0#6'Height'#2#25#3'Top'#3#16#1#5'Width'#2'K'#0#0
+  +#7'TButton'#18'OpenPlaylistButton'#22'BorderSpacing.OnChange'#13#25'BorderSp'
+  +'acing.InnerBorder'#2#2#7'Caption'#6#13'Open Playlist'#7'OnClick'#7#23'OpenP'
+  +'laylistButtonClick'#8'TabOrder'#2#4#4'Left'#3#241#0#6'Height'#2#25#3'Top'#3
+  +#16#1#5'Width'#2'K'#0#0#8'TListBox'#14'PlayListViewer'#22'BorderSpacing.OnCh'
+  +'ange'#13#10'OnDblClick'#7#22'PlayListViewerDblClick'#9'OnKeyDown'#7#21'Play'
+  +'ListViewerKeyDown'#8'TabOrder'#2#5#4'Left'#2#4#6'Height'#3#208#0#3'Top'#2'8'
+  +#5'Width'#3'8'#1#0#0#11'TOpenDialog'#10'OpenDialog'#7'Options'#11#18'ofAllow'
+  +'MultiSelect'#15'ofPathMustExist'#15'ofFileMustExist'#17'ofNoNetworkButton'
+  +#14'ofEnableSizing'#12'ofViewDetail'#0#5'Title'#6#18'Open existing file'#8'F'
+  +'ileName'#6'6E:\Diverse\Music\AC DC\ACDC  - Thunder Struck live.mp3'#6'Filte'
+  +'r'#6#180'All supported files(*.AIFF,*.ASF,*.FLAC,*.FSB,*.MP2,*.MP3,*.OGG,*.'
+  +'RAV,*.S3M,*.WAV,*.WMA,*.XM)|*.AIFF;*.ASF;*.FLAC;*.FSB;*.MP2;*.MP3;*.OGG;*.R'
+  +'AV;*.S3M;*.WAV;*.WMA;*.XM|All files|*.*'#11'FilterIndex'#2#0#10'InitialDir'
+  +#6#23'E:\Diverse\Music\AC DC\'#5'Title'#6#18'Open existing file'#4'left'#3
+  +#232#0#3'top'#2#8#0#0#22'TSelectDirectoryDialog'#21'SelectDirectoryDialog'#5
+  +'Title'#6#16'Select Directory'#11'FilterIndex'#2#0#5'Title'#6#16'Select Dire'
+  +'ctory'#4'left'#3#232#0#3'top'#2'('#0#0#11'TOpenDialog'#18'PlaylistOpenDialo'
+  +'g'#5'Title'#6#18'Open existing file'#6'Filter'#6':All Supported Files(*.m3u'
+  +';*.pls)|*.m3u;*.pls|All files|*.*'#11'FilterIndex'#2#0#5'Title'#6#18'Open e'
+  +'xisting file'#4'left'#3#232#0#3'top'#2'H'#0#0#0
+]);

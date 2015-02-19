@@ -1,0 +1,134 @@
+object Main: TMain
+  BorderIcons = [biSystemMenu, biMinimize]
+  BorderStyle = bsSingle
+  Caption = 'Linamp'
+  ClientHeight = 80
+  ClientWidth = 300
+  OnCreate = FormCreate
+  OnDestroy = FormDestroy
+  PixelsPerInch = 96
+  Position = poScreenCenter
+  HorzScrollBar.Page = 299
+  VertScrollBar.Page = 79
+  Left = 521
+  Height = 80
+  Top = 328
+  Width = 300
+  object PositionLabel: TLabel
+    Caption = 'Position:'
+    Color = clNone
+    Height = 13
+    Top = 56
+    Width = 41
+  end
+  object VolumeLabel: TLabel
+    Caption = 'Volume'
+    Color = clNone
+    Height = 13
+    Top = 14
+    Width = 34
+  end
+  object SongTicker: TLabel
+    AutoSize = False
+    Color = clNone
+    Height = 14
+    Width = 300
+  end
+  object BalanceLabel: TLabel
+    Caption = 'Balance'
+    Color = clNone
+    Height = 13
+    Top = 35
+    Width = 37
+  end
+  object SongTrackBar: TTrackBar
+    DragMode = dmAutomatic
+    Max = 1024
+    OnEndDrag = SongTrackBarEndDrag
+    OnStartDrag = SongTrackBarStartDrag
+    PageSize = 64
+    ScalePos = trTop
+    TabOrder = 0
+    Max = 1024
+    PageSize = 64
+    ScalePos = trTop
+    Left = 50
+    Height = 28
+    Top = 56
+    Width = 250
+  end
+  object VolumeTrackbar: TTrackBar
+    Max = 255
+    OnChange = VolumeTrackbarChange
+    PageSize = 255
+    Position = 255
+    ScalePos = trTop
+    TabOrder = 1
+    Max = 255
+    OnChange = VolumeTrackbarChange
+    PageSize = 255
+    Position = 255
+    ScalePos = trTop
+    Left = 54
+    Height = 21
+    Top = 14
+    Width = 100
+  end
+  object PlayPauseButton: TButton
+    BorderSpacing.InnerBorder = 2
+    Caption = 'Play/Pause'
+    OnClick = PlayPauseButtonClick
+    TabOrder = 2
+    Left = 160
+    Height = 21
+    Top = 35
+    Width = 68
+  end
+  object StopButton: TButton
+    BorderSpacing.InnerBorder = 2
+    Caption = 'Stop'
+    OnClick = StopButtonClick
+    TabOrder = 3
+    Left = 230
+    Height = 21
+    Top = 35
+    Width = 68
+  end
+  object ShuffleCheckbox: TCheckBox
+    Caption = 'Shuffle'
+    TabOrder = 4
+    Left = 160
+    Height = 13
+    Top = 16
+    Width = 53
+  end
+  object BalanceTrackbar: TTrackBar
+    BorderSpacing.OnChange = nil
+    PageSize = 1
+    Position = 5
+    ScalePos = trTop
+    TabOrder = 5
+    PageSize = 1
+    Position = 5
+    ScalePos = trTop
+    Left = 54
+    Height = 21
+    Top = 35
+    Width = 100
+  end
+  object ShowPlaylistCheckbox: TCheckBox
+    AutoSize = False
+    Caption = 'Show Playlist'
+    OnChange = ShowPlaylistCheckboxChange
+    TabOrder = 6
+    Left = 216
+    Height = 13
+    Top = 16
+    Width = 84
+  end
+  object IdleTimer: TIdleTimer
+    Enabled = False
+    Interval = 100
+    OnTimer = IdleTimerTimer
+  end
+end

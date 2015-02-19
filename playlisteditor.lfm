@@ -1,0 +1,121 @@
+object PlaylistWindow: TPlaylistWindow
+  Caption = 'Playlist Editor'
+  ClientHeight = 300
+  ClientWidth = 320
+  Constraints.MinHeight = 160
+  Constraints.MinWidth = 320
+  OnActivate = FormActivate
+  OnClose = FormClose
+  OnCloseQuery = FormCloseQuery
+  OnCreate = FormCreate
+  OnResize = FormResize
+  PixelsPerInch = 96
+  Position = poScreenCenter
+  HorzScrollBar.Page = 319
+  VertScrollBar.Page = 299
+  Left = 415
+  Height = 300
+  Top = 218
+  Width = 320
+  object GroupBox: TGroupBox
+    BorderSpacing.OnChange = nil
+    Caption = 'Search for text'
+    ClientHeight = 30
+    ClientWidth = 308
+    ParentColor = True
+    TabOrder = 0
+    Left = 4
+    Height = 48
+    Width = 312
+    object EditBox: TEdit
+      BorderSpacing.OnChange = nil
+      OnChange = EditBoxChange
+      OnKeyDown = EditBoxKeyDown
+      TabOrder = 0
+      Left = 4
+      Height = 23
+      Top = 2
+      Width = 300
+    end
+  end
+  object AddFileButton: TButton
+    BorderSpacing.OnChange = nil
+    BorderSpacing.InnerBorder = 2
+    Caption = 'Add file'
+    OnClick = AddFileButtonClick
+    TabOrder = 1
+    Left = 4
+    Height = 25
+    Top = 272
+    Width = 75
+  end
+  object AddDirectoryButton: TButton
+    BorderSpacing.OnChange = nil
+    BorderSpacing.InnerBorder = 2
+    Caption = 'Add Directory'
+    OnClick = AddDirectoryButtonClick
+    TabOrder = 2
+    Left = 83
+    Height = 25
+    Top = 272
+    Width = 75
+  end
+  object ClearPlayListButton: TButton
+    BorderSpacing.OnChange = nil
+    BorderSpacing.InnerBorder = 2
+    Caption = 'Clear Playlist'
+    OnClick = ClearPlayListButtonClick
+    TabOrder = 3
+    Left = 162
+    Height = 25
+    Top = 272
+    Width = 75
+  end
+  object OpenPlaylistButton: TButton
+    BorderSpacing.OnChange = nil
+    BorderSpacing.InnerBorder = 2
+    Caption = 'Open Playlist'
+    OnClick = OpenPlaylistButtonClick
+    TabOrder = 4
+    Left = 241
+    Height = 25
+    Top = 272
+    Width = 75
+  end
+  object PlayListViewer: TListBox
+    BorderSpacing.OnChange = nil
+    OnDblClick = PlayListViewerDblClick
+    OnKeyDown = PlayListViewerKeyDown
+    TabOrder = 5
+    Left = 4
+    Height = 208
+    Top = 56
+    Width = 312
+  end
+  object OpenDialog: TOpenDialog
+    Options = [ofAllowMultiSelect, ofPathMustExist, ofFileMustExist, ofNoNetworkButton, ofEnableSizing, ofViewDetail]
+    Title = 'Open existing file'
+    FileName = 'E:\Diverse\Music\AC DC\ACDC  - Thunder Struck live.mp3'
+    Filter = 'All supported files(*.AIFF,*.ASF,*.FLAC,*.FSB,*.MP2,*.MP3,*.OGG,*.RAV,*.S3M,*.WAV,*.WMA,*.XM)|*.AIFF;*.ASF;*.FLAC;*.FSB;*.MP2;*.MP3;*.OGG;*.RAV;*.S3M;*.WAV;*.WMA;*.XM|All files|*.*'
+    FilterIndex = 0
+    InitialDir = 'E:\Diverse\Music\AC DC\'
+    Title = 'Open existing file'
+    left = 232
+    top = 8
+  end
+  object SelectDirectoryDialog: TSelectDirectoryDialog
+    Title = 'Select Directory'
+    FilterIndex = 0
+    Title = 'Select Directory'
+    left = 232
+    top = 40
+  end
+  object PlaylistOpenDialog: TOpenDialog
+    Title = 'Open existing file'
+    Filter = 'All Supported Files(*.m3u;*.pls)|*.m3u;*.pls|All files|*.*'
+    FilterIndex = 0
+    Title = 'Open existing file'
+    left = 232
+    top = 72
+  end
+end
